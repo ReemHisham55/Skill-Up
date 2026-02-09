@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUp | Sign Up</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-bg">
+
+    <header class="auth-header">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <img src="images/logo.png" alt="SkillUp Logo"> <span>SkillUp</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html #courses">Courses</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card signup-card">
+            <h1>Create Your Account</h1>
+            <p class="subtitle">Join thousands of learners on SkillUp</p>
+
+            <form>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" placeholder="Create a password" id="password" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Interests</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox"> Web Development</label>
+                        <label><input type="checkbox"> Design</label>
+                        <label><input type="checkbox"> Marketing</label>
+                        <label><input type="checkbox"> Business</label>
+                        <label><input type="checkbox"> Data Science</label>
+                        <label><input type="checkbox"> Photography</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Country</label>
+                    <select class="custom-select">
+                        <option value="">Select your country</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="saudi">Saudi Arabia</option>
+                        <option value="uae">UAE</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>About You</label>
+                    <textarea placeholder="Tell us about yourself and your learning goals..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-orange-full-auth">Create Account</button>
+            </form>
+
+            <p class="footer-text">Already have an account? <a href="signin.html">Sign in here</a></p>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span style="color: white;">SkillUp</span>
+                </div>
+                <p>Empowering learners worldwide with quality education and skills development.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html #courses">Courses</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; SkillUp By Reem Hisham. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
