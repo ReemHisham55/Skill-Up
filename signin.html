@@ -16,6 +16,11 @@
             <div class="logo">
                 <img src="images/logo.png" alt="SkillUp Logo"> <span>SkillUp</span>
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -94,6 +99,14 @@
             <p>&copy; SkillUp By Reem Hisham. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav');
+
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
