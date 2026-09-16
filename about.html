@@ -16,6 +16,11 @@
             <div class="logo">
                 <img src="images/logo.png" alt="SkillUp Logo"> <span>SkillUp</span>
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -50,36 +55,36 @@
             </div>
         </div>
     </section>
-    
+
     <section class="table-section container">
-    <h2 class="section-header">Course Comparison</h2>
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>Course Title</th>
-                <th>Difficulty</th>
-                <th>Total Lessons</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Web Development</td>
-                <td>Beginner</td>
-                <td>24 Lessons</td>
-            </tr>
-            <tr>
-                <td>Graphic Design</td>
-                <td>Intermediate</td>
-                <td>18 Lessons</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3"><i>Note: All courses are updated monthly &copy; 2025</i></td>
-            </tr>
-        </tfoot>
-    </table>
-</section>
+        <h2 class="section-header">Course Comparison</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th>Difficulty</th>
+                    <th>Total Lessons</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Beginner</td>
+                    <td>24 Lessons</td>
+                </tr>
+                <tr>
+                    <td>Graphic Design</td>
+                    <td>Intermediate</td>
+                    <td>18 Lessons</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><i>Note: All courses are updated monthly &copy; 2025</i></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
 
     <section class="mission-vision">
         <div class="container mission-grid">
@@ -128,7 +133,7 @@
         </div>
     </section>
 
-    
+
 
     <footer class="main-footer">
         <div class="container footer-grid">
@@ -165,7 +170,14 @@
             <p>&copy; SkillUp By Reem Hisham. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const nav = document.querySelector('nav');
 
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
